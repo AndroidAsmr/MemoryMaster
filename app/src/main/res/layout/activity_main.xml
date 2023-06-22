@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_text_heavy"
+        android:text="@string/memory_master"
+        android:textColor="@color/white"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/sf_pro_text_heavy"
+        android:text="@string/_0"
+        android:textColor="#FECC40"
+        android:textSize="46sp"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel1"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScore" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel2"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/panel1"
+        app:layout_constraintTop_toBottomOf="@id/tvScore" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel3"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel4"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/panel3"
+        app:layout_constraintTop_toBottomOf="@id/panel2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/asmr_kotlin"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
